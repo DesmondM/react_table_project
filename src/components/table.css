@@ -14,10 +14,18 @@ table tr:nth-child(even){background-color: #f2f2f2;}
 
 table tr:hover {background-color: #ddd;}
 
-table th {
+table th, tfoot td {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
   background-color: #ff9100;
   color: white;
+}
+
+tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #eeff00;
+  color: rgb(0, 0, 0);
 }
