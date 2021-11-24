@@ -6,7 +6,7 @@ import './table.css'
 import GlobalFilter from './GlobalFilter';
 
 
-const FilterTable = () => {
+const PaginationTable = () => {
     const columns =useMemo(()=>COLUMNS,[])   //ensures data is not re-created each time there is a re-render
     const data = useMemo(()=>MOCK_DATA, [])
   
@@ -88,4 +88,4 @@ const FilterTable = () => {
     )
 }
 
-export default FilterTable
+export default PaginationTable

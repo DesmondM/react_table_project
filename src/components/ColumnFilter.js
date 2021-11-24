@@ -1,10 +1,12 @@
 import React from 'react'
 
-const ColumnFilter = ({filter, setFilter}) => {
+const ColumnFilter = ({ column }) => {
+    const {filterValue, setFilter} = column
     return (
         <span>
-            Enter Global Search string :{' '}
-            <input value ={filter||''}onChange={(e)=>setFilter(e.target.value)}/>
+            Search:{' '}
+            <input value ={filterValue ||''}
+            onChange = {(e)=> setFilter(e.target.value)}/>
         </span>
     )
 }
