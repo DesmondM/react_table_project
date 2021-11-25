@@ -76,6 +76,12 @@ const PaginationTable = () => {
             </tbody> 
         </table>
             <div>
+             <span>
+               Page{' '}
+               <strong>
+                   {pageIndex+1} of {pageOptions.length}
+               </strong> {' '}
+             </span>
                 <button onClick={()=>previousPage()}> Back </button>
                  <button onClick={()=>nextPage()}> Next </button>
             </div>
